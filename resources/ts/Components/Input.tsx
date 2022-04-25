@@ -1,6 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Input({
+interface Props {
+    type?: string;
+    name: string;
+    value: string;
+    className?: string;
+    autoComplete?: string | undefined;
+    required?: boolean;
+    isFocused?: boolean;
+    handleChange: React.ChangeEventHandler<HTMLInputElement>;
+}
+
+const Input: React.FC<Props> = ({
     type = 'text',
     name,
     value,
@@ -9,12 +20,12 @@ export default function Input({
     required,
     isFocused,
     handleChange,
-}) {
-    const input = useRef();
+}) => {
+    const input = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         if (isFocused) {
-            input.current.focus();
+            input.current?.focus();
         }
     }, []);
 
@@ -36,3 +47,5 @@ export default function Input({
         </div>
     );
 }
+
+export default Input;

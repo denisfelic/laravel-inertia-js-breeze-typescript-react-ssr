@@ -1,5 +1,6 @@
+import { Head, Link } from '@inertiajs/inertia-react';
 import React from 'react';
-import { Link, Head } from '@inertiajs/inertia-react';
+declare var route;
 
 export default function Welcome(props) {
     return (
