@@ -33,5 +33,10 @@
         "tailwindcss": "^3.0.18",
         "ts-loader": "^9.2.8",
         "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "@inertiajs/server": "^0.1.0",
+        "webpack-node-externals": "^3.0.0",
+        "ziggy-js": "^1.4.6"
     }
 }
