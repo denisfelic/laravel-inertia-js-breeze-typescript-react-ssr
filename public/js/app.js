@@ -4658,7 +4658,8 @@ __webpack_require__.r(__webpack_exports__);
 function Authenticated(_a) {
   var auth = _a.auth,
       header = _a.header,
-      children = _a.children;
+      children = _a.children,
+      errors = _a.errors;
 
   var _b = (0,react__WEBPACK_IMPORTED_MODULE_5__.useState)(false),
       showingNavigationDropdown = _b[0],
@@ -4815,6 +4816,7 @@ __webpack_require__.r(__webpack_exports__);
 function Dashboard(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_0__["default"], {
     auth: props.auth,
+    errors: props.errors,
     header: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("h2", {
       className: "font-semibold text-xl text-gray-800 leading-tight"
     }, "Dashboard")
@@ -5271,10 +5273,10 @@ function ForgotPassword(_ref) {
 
 /***/ }),
 
-/***/ "./resources/ts/Pages/Auth/Login.js":
-/*!******************************************!*\
-  !*** ./resources/ts/Pages/Auth/Login.js ***!
-  \******************************************/
+/***/ "./resources/ts/Pages/Auth/Login.jsx":
+/*!*******************************************!*\
+  !*** ./resources/ts/Pages/Auth/Login.jsx ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -58912,8 +58914,9 @@ var map = {
 	"./Auth/ConfirmPassword.js": "./resources/ts/Pages/Auth/ConfirmPassword.js",
 	"./Auth/ForgotPassword": "./resources/ts/Pages/Auth/ForgotPassword.js",
 	"./Auth/ForgotPassword.js": "./resources/ts/Pages/Auth/ForgotPassword.js",
-	"./Auth/Login": "./resources/ts/Pages/Auth/Login.js",
-	"./Auth/Login.js": "./resources/ts/Pages/Auth/Login.js",
+	"./Auth/Login": "./resources/ts/Pages/Auth/Login.jsx",
+	"./Auth/Login.": "./resources/ts/Pages/Auth/Login.jsx",
+	"./Auth/Login.jsx": "./resources/ts/Pages/Auth/Login.jsx",
 	"./Auth/Register": "./resources/ts/Pages/Auth/Register.js",
 	"./Auth/Register.js": "./resources/ts/Pages/Auth/Register.js",
 	"./Auth/ResetPassword": "./resources/ts/Pages/Auth/ResetPassword.js",

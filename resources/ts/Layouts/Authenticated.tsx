@@ -6,8 +6,9 @@ import { Link } from '@inertiajs/inertia-react';
 import React, { useState } from 'react';
 declare var route;
 
-export default function Authenticated({ auth, header, children }) {
+export default function Authenticated({ auth, header, children, errors }: {auth: any, header: any, children: any, errors?: any}) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
+
 
     return (
         <div className="min-h-screen bg-gray-100">
