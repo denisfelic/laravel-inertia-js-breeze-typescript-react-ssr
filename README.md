@@ -9,3 +9,6 @@ or
 ```
 sail node public/js/ssr.js 
 ```
+
+https://laravel.com/docs/9.x/sail
+https://inertiajs.com/server-side-rendering
