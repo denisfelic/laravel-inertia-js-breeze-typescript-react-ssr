@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "jsx": "react",
+      "module": "es2020",
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["resources/ts/*"]
+      },
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noImplicitAny": false,
+      "skipLibCheck": true
+    },
+    "include": [
+        "resources/ts/**/*"
+      ],
+    "exclude": ["node_modules", "public"]
+  }
